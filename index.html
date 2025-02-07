@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十二时辰</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeButton">
+            <svg class="sun-icon" viewBox="0 0 24 24">
+                <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0-2V4m0 16v-3M4 12H1m22 0h-3M5.64 5.64L3.5 3.5m16.36.14l-2.14 2.14M5.64 18.36L3.5 20.5m16.36-.14l-2.14-2.14"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="container">
+        <h1>十二时辰</h1>
+        <div class="current-time">
+            <span id="digitalClock"></span>
+            <span id="currentShichen"></span>
+        </div>
+        
+        <div class="shichen-grid">
+            <div class="shichen-item" data-time="23:00-00:59">
+                <div class="character">子</div>
+                <div class="pinyin">zǐ</div>
+                <div class="time-range">23:00-00:59</div>
+            </div>
+            <div class="shichen-item" data-time="01:00-02:59">
+                <div class="character">丑</div>
+                <div class="pinyin">chǒu</div>
+                <div class="time-range">01:00-02:59</div>
+            </div>
+            <div class="shichen-item" data-time="03:00-04:59">
+                <div class="character">寅</div>
+                <div class="pinyin">yín</div>
+                <div class="time-range">03:00-04:59</div>
+            </div>
+            <div class="shichen-item" data-time="05:00-06:59">
+                <div class="character">卯</div>
+                <div class="pinyin">mǎo</div>
+                <div class="time-range">05:00-06:59</div>
+            </div>
+            <div class="shichen-item" data-time="07:00-08:59">
+                <div class="character">辰</div>
+                <div class="pinyin">chén</div>
+                <div class="time-range">07:00-08:59</div>
+            </div>
+            <div class="shichen-item" data-time="09:00-10:59">
+                <div class="character">巳</div>
+                <div class="pinyin">sì</div>
+                <div class="time-range">09:00-10:59</div>
+            </div>
+            <div class="shichen-item" data-time="11:00-12:59">
+                <div class="character">午</div>
+                <div class="pinyin">wǔ</div>
+                <div class="time-range">11:00-12:59</div>
+            </div>
+            <div class="shichen-item" data-time="13:00-14:59">
+                <div class="character">未</div>
+                <div class="pinyin">wèi</div>
+                <div class="time-range">13:00-14:59</div>
+            </div>
+            <div class="shichen-item" data-time="15:00-16:59">
+                <div class="character">申</div>
+                <div class="pinyin">shēn</div>
+                <div class="time-range">15:00-16:59</div>
+            </div>
+            <div class="shichen-item" data-time="17:00-18:59">
+                <div class="character">酉</div>
+                <div class="pinyin">yǒu</div>
+                <div class="time-range">17:00-18:59</div>
+            </div>
+            <div class="shichen-item" data-time="19:00-20:59">
+                <div class="character">戌</div>
+                <div class="pinyin">xū</div>
+                <div class="time-range">19:00-20:59</div>
+            </div>
+            <div class="shichen-item" data-time="21:00-22:59">
+                <div class="character">亥</div>
+                <div class="pinyin">hài</div>
+                <div class="time-range">21:00-22:59</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
