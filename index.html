@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>十二时辰</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .zodiac-label {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            opacity: 0.8;
+            margin-left: 4px;
+        }
+        .character-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <div class="theme-toggle">
@@ -24,62 +37,98 @@
         
         <div class="shichen-grid">
             <div class="shichen-item" data-time="23:00-00:59">
-                <div class="character">子</div>
+                <div class="character-wrapper">
+                    <div class="character">子</div>
+                    <span class="zodiac-label">(鼠)</span>
+                </div>
                 <div class="pinyin">zǐ</div>
                 <div class="time-range">23:00-00:59</div>
             </div>
             <div class="shichen-item" data-time="01:00-02:59">
-                <div class="character">丑</div>
+                <div class="character-wrapper">
+                    <div class="character">丑</div>
+                    <span class="zodiac-label">(牛)</span>
+                </div>
                 <div class="pinyin">chǒu</div>
                 <div class="time-range">01:00-02:59</div>
             </div>
             <div class="shichen-item" data-time="03:00-04:59">
-                <div class="character">寅</div>
+                <div class="character-wrapper">
+                    <div class="character">寅</div>
+                    <span class="zodiac-label">(虎)</span>
+                </div>
                 <div class="pinyin">yín</div>
                 <div class="time-range">03:00-04:59</div>
             </div>
             <div class="shichen-item" data-time="05:00-06:59">
-                <div class="character">卯</div>
+                <div class="character-wrapper">
+                    <div class="character">卯</div>
+                    <span class="zodiac-label">(兔)</span>
+                </div>
                 <div class="pinyin">mǎo</div>
                 <div class="time-range">05:00-06:59</div>
             </div>
             <div class="shichen-item" data-time="07:00-08:59">
-                <div class="character">辰</div>
+                <div class="character-wrapper">
+                    <div class="character">辰</div>
+                    <span class="zodiac-label">(龙)</span>
+                </div>
                 <div class="pinyin">chén</div>
                 <div class="time-range">07:00-08:59</div>
             </div>
             <div class="shichen-item" data-time="09:00-10:59">
-                <div class="character">巳</div>
+                <div class="character-wrapper">
+                    <div class="character">巳</div>
+                    <span class="zodiac-label">(蛇)</span>
+                </div>
                 <div class="pinyin">sì</div>
                 <div class="time-range">09:00-10:59</div>
             </div>
             <div class="shichen-item" data-time="11:00-12:59">
-                <div class="character">午</div>
+                <div class="character-wrapper">
+                    <div class="character">午</div>
+                    <span class="zodiac-label">(马)</span>
+                </div>
                 <div class="pinyin">wǔ</div>
                 <div class="time-range">11:00-12:59</div>
             </div>
             <div class="shichen-item" data-time="13:00-14:59">
-                <div class="character">未</div>
+                <div class="character-wrapper">
+                    <div class="character">未</div>
+                    <span class="zodiac-label">(羊)</span>
+                </div>
                 <div class="pinyin">wèi</div>
                 <div class="time-range">13:00-14:59</div>
             </div>
             <div class="shichen-item" data-time="15:00-16:59">
-                <div class="character">申</div>
+                <div class="character-wrapper">
+                    <div class="character">申</div>
+                    <span class="zodiac-label">(猴)</span>
+                </div>
                 <div class="pinyin">shēn</div>
                 <div class="time-range">15:00-16:59</div>
             </div>
             <div class="shichen-item" data-time="17:00-18:59">
-                <div class="character">酉</div>
+                <div class="character-wrapper">
+                    <div class="character">酉</div>
+                    <span class="zodiac-label">(鸡)</span>
+                </div>
                 <div class="pinyin">yǒu</div>
                 <div class="time-range">17:00-18:59</div>
             </div>
             <div class="shichen-item" data-time="19:00-20:59">
-                <div class="character">戌</div>
+                <div class="character-wrapper">
+                    <div class="character">戌</div>
+                    <span class="zodiac-label">(狗)</span>
+                </div>
                 <div class="pinyin">xū</div>
                 <div class="time-range">19:00-20:59</div>
             </div>
             <div class="shichen-item" data-time="21:00-22:59">
-                <div class="character">亥</div>
+                <div class="character-wrapper">
+                    <div class="character">亥</div>
+                    <span class="zodiac-label">(猪)</span>
+                </div>
                 <div class="pinyin">hài</div>
                 <div class="time-range">21:00-22:59</div>
             </div>
