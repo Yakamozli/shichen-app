@@ -17,6 +17,27 @@
             align-items: center;
             justify-content: center;
         }
+        .container {
+            padding-bottom: 1rem; /* 减小底部内边距 */
+        }
+        .author {
+            text-align: center;
+            padding: 0.5rem 0;
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 0.9rem;
+            margin-top: 0.5rem; /* 减小顶部外边距 */
+            width: 100%;
+            background: var(--background-color);
+        }
+        .author a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+        .author a:hover {
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -134,6 +155,11 @@
             </div>
         </div>
     </div>
+    
+    <div class="author">
+        Created with ❤️ by <a href="javascript:void(0)">李小沐 2025.02.07</a>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
