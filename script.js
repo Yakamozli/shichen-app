@@ -61,6 +61,14 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     });
 
+    // 添加时辰卡片点击事件
+    document.querySelectorAll('.shichen-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const character = item.querySelector('.character').textContent;
+            window.location.href = `detail.html?shichen=${character}`;
+        });
+    });
+
     // 初始化并每秒更新时间
     updateTime();
     setInterval(updateTime, 1000);

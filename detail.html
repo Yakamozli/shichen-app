@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时辰详情</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin-bottom: 2rem;
+            border: none;
+            background: var(--card-background);
+            color: var(--text-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: var(--hover-color);
+        }
+        
+        .detail-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .character-large {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+        }
+        
+        .time-period {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+        
+        .detail-content {
+            background: var(--card-background);
+            padding: 2rem;
+            border-radius: 18px;
+            margin-bottom: 2rem;
+        }
+        
+        .detail-section {
+            margin-bottom: 2rem;
+        }
+        
+        .detail-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .detail-section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeButton">
+            <svg class="sun-icon" viewBox="0 0 24 24">
+                <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0-2V4m0 16v-3M4 12H1m22 0h-3M5.64 5.64L3.5 3.5m16.36.14l-2.14 2.14M5.64 18.36L3.5 20.5m16.36-.14l-2.14-2.14"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="detail-container">
+        <button class="back-button" onclick="history.back()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            返回
+        </button>
+        
+        <div class="detail-header">
+            <div class="character-large" id="mainCharacter"></div>
+            <div class="pinyin" id="mainPinyin"></div>
+            <div class="time-period" id="timeRange"></div>
+        </div>
+        
+        <div class="detail-content">
+            <div class="detail-section">
+                <h3>时辰说明</h3>
+                <p id="description"></p>
+            </div>
+            
+            <div class="detail-section">
+                <h3>吉时宜忌</h3>
+                <p id="activities"></p>
+            </div>
+            
+            <div class="detail-section">
+                <h3>生肖特征</h3>
+                <p id="zodiac"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="detail.js"></script>
+</body>
+</html> 
