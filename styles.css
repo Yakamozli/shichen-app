@@ -62,15 +62,15 @@ h1 {
 
 .shichen-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
     padding: 1rem;
 }
 
 .shichen-item {
     background-color: var(--card-background);
-    border-radius: 24px;
-    padding: 2rem;
+    border-radius: 20px;
+    padding: 1.5rem;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
@@ -166,7 +166,7 @@ h1 {
 }
 
 .character {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
     letter-spacing: -0.03em;
@@ -174,14 +174,14 @@ h1 {
 
 .pinyin {
     color: var(--primary-color);
-    margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
 
 .time-range {
-    font-size: 1rem;
+    font-size: 0.9rem;
     opacity: 0.8;
     font-weight: 400;
     letter-spacing: 0.01em;
@@ -218,10 +218,10 @@ h1 {
 }
 
 .zodiac-label {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
     opacity: 0.8;
-    margin-left: 6px;
+    margin-left: 4px;
     font-weight: 500;
 }
 
@@ -242,16 +242,16 @@ h1 {
     }
     
     .shichen-grid {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 1rem;
     }
 
     .character {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .shichen-item {
-        padding: 1.5rem;
-        border-radius: 20px;
+        padding: 1.2rem;
+        border-radius: 16px;
     }
 }
